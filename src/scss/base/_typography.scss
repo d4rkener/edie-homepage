@@ -7,6 +7,11 @@ h1 {
   line-height: 2.25rem;
 
   @include abs.breakpoint(medium) {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+
+  @include abs.breakpoint(large) {
     font-size: 3rem;
     line-height: 4.5rem;
   }

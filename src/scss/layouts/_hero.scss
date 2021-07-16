@@ -1,0 +1,55 @@
+@use '../abstracts' as abs;
+
+.hero {
+  padding: 1.875rem 0.9375rem;
+
+  &__text {
+    padding: 0 0.8rem;
+
+    @include abs.breakpoint(medium) {
+      padding: 0 2.4rem;
+    }
+
+    @include abs.breakpoint(large) {
+      padding: 0 6.4rem;
+    }
+
+    h5 {
+      font-size: 0.75rem;
+      color: abs.$blue;
+
+      @include abs.breakpoint(medium) {
+        font-size: 1.125rem;
+      }
+    }
+
+    p {
+      margin: 0.8125rem 0 1.5625rem 0;
+
+      @include abs.breakpoint(large) {
+        max-width: 400px;
+      }
+    }
+  }
+
+  &__image {
+    margin: 1.125rem 0;
+
+    @include abs.breakpoint(medium) {
+      margin: 2.625rem 0;
+    }
+
+    img {
+      border-radius: 1.125rem;
+      max-height: 150px;
+
+      @include abs.breakpoint(medium) {
+        max-height: 300px;
+      }
+
+      @include abs.breakpoint(large) {
+        max-height: 400px;
+      }
+    }
+  }
+}
