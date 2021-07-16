@@ -5,13 +5,42 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Edie Homepage</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="header">
+      <nav class="flex flex-ai-c flex-jc-sb">
+        <div class="header__logo">
+          <h1>Edie</h1>
+        </div>
+        <div class="header__links hide-mobile">
+          <a href="#">Home</a><a href="#">Services</a><a href="#">Our Works</a
+          ><a href="#">Clients</a><a href="#">Contact</a>
+        </div>
+        <div class="header__icons hide-desktop">
+          <i class="fas fa-bars" id="hamburgerOpen"></i>
+          <i class="fas fa-times hide" id="hamburgerClose"></i>
+        </div>
+      </nav>
+      <div
+        class="header__mobileNav hide hide-desktop flex flex-d-c flex-ai-c"
+        id="mobileNav"
+      >
+        <a href="#">Home</a><a href="#">Services</a><a href="#">Our Works</a
+        ><a href="#">Clients</a><a href="#">Contact</a>
+      </div>
+    </header>
+
+    <!-- JavaScript -->
     <script type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>

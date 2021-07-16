@@ -1,0 +1,41 @@
+@use '../abstracts' as abs;
+
+.header {
+  nav {
+    padding: 0.875rem 0.9375rem;
+  }
+
+  &__logo {
+    h1 {
+      font-family: abs.$fontHeebo;
+      font-weight: 800;
+      line-height: 2.203125rem;
+      font-size: 1.5rem;
+
+      @include abs.breakpoint(medium) {
+        font-size: 2.25rem;
+        line-height: 3.305rem;
+      }
+    }
+  }
+
+  &__icons {
+    i {
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    a {
+      font-size: 20px;
+    }
+
+    a:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__mobileNav {
+    padding: 0.4rem;
+  }
+}
