@@ -5,14 +5,14 @@
   padding: 0.5625rem 0.8125rem;
   font-size: 1rem;
   border-radius: 12px;
-}
 
-.btn-primary {
-  background: abs.$blue;
-  color: #fff;
-}
+  &-primary {
+    background: abs.$blue;
+    color: #fff;
+  }
 
-.btn-secondary {
-  background: #e0e0e0;
-  color: abs.$lightGray;
+  &-secondary {
+    background: #e0e0e0;
+    color: abs.$lightGray;
+  }
 }

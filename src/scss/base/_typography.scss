@@ -25,6 +25,7 @@ h2 {
 
   @include abs.breakpoint(medium) {
     font-size: 3.375rem;
+    line-height: 3.375rem;
   }
 }
 
