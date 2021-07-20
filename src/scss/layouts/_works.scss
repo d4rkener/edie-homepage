@@ -1,0 +1,62 @@
+@use '../abstracts' as abs;
+
+.our-works {
+  padding: 0 0.9375rem;
+
+  @include abs.breakpoint(medium) {
+    padding: 2rem 1.9375rem;
+  }
+
+  @include abs.breakpoint(large) {
+    padding: 2rem 1.9375rem;
+  }
+
+  h2 {
+    margin: 0 0 2.75rem 2.0625rem;
+  }
+
+  .works {
+    @include abs.breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+      padding: 2.1875rem;
+    }
+
+    .work {
+      margin-bottom: 2.25rem;
+
+      &__img {
+        img {
+          border-radius: 12px;
+        }
+      }
+
+      &:nth-child(2) {
+        .work__img {
+          @include abs.breakpoint(medium) {
+            transform: translateY(-12%);
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .work__img {
+          @include abs.breakpoint(medium) {
+            transform: translateY(-12%);
+          }
+        }
+      }
+    }
+  }
+
+  .see-more {
+    color: abs.$blue;
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+
+    @include abs.breakpoint(medium) {
+      text-align: right;
+    }
+  }
+}
