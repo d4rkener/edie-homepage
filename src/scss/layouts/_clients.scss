@@ -1,0 +1,61 @@
+@use '../abstracts' as abs;
+
+.clients {
+  padding: 2.375rem 0.9375rem;
+
+  @include abs.breakpoint(medium) {
+    padding: 2.375rem 1.9375rem;
+  }
+
+  > div {
+    @include abs.breakpoint(medium) {
+      padding: 2.1875rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 2.25rem;
+
+    p:first-child {
+      color: abs.$red;
+    }
+
+    h2 {
+      margin-bottom: 0.875rem;
+      margin-top: 0.4375rem;
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+
+    img:first-child {
+      width: 11.125rem;
+      border-radius: 24px;
+      margin-right: 0.5625rem;
+
+      @include abs.breakpoint(large) {
+        width: 20rem;
+      }
+    }
+
+    div:nth-child(2) {
+      img {
+        width: 9rem;
+        border-radius: 24px;
+
+        @include abs.breakpoint(large) {
+          width: 16.25rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 0.5625rem;
+        }
+      }
+    }
+  }
+}
