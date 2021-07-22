@@ -1,0 +1,35 @@
+@use '../abstracts' as abs;
+
+.testimonial {
+  padding: 2.375rem 0.9375rem;
+
+  @include abs.breakpoint(medium) {
+    padding: 2.375rem 1.9375rem;
+  }
+
+  > div {
+    @include abs.breakpoint(medium) {
+      padding: 2.1875rem;
+    }
+  }
+
+  &__profile {
+    margin-top: 1.6875rem;
+    display: flex;
+
+    .avatar {
+      margin-right: 1.875rem;
+
+      img {
+        width: 5.125rem;
+        border-radius: 12px;
+      }
+    }
+
+    .details {
+      h4 {
+        margin-bottom: 0.66rem;
+      }
+    }
+  }
+}
